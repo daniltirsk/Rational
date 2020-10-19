@@ -13,9 +13,9 @@ int main()
 	Rational x1,x2;
     while (true){
 	cout << "Enter the coefficient a, b, c of a quadratic equation" << endl;
-	cin >> a;
-/*
+	cin >> a>>b>>c;
 	d = b*b - a*c*4;
+	cout<<"d"<<d<<endl;
 
 	if (d<0) {
         cout<<"no roots"<<endl;
@@ -25,14 +25,14 @@ int main()
 	} else {
         droot = d.Rsqrt();
 
-        x1 = (-b + droot)/2*a;
+        x1 = (-b + droot)/(a*2);
 
-        x2 = (-b + droot)/2*a;
+        x2 = (-b - droot)/(a*2);
 
         cout<<x1<<" "<<x2<<endl;
 	}
-*/
-	cout<<a.Rsqrt()<<endl;
+
     }
+
 
 }
